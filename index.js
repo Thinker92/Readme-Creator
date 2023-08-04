@@ -1,6 +1,6 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
-const generateMarkdown = require('./generateMarkdown');
+const generateMarkdown = require('./utils/generateMarkdown');
 
 const questions = [
     {
@@ -66,7 +66,7 @@ const questions = [
 ];
 
 
-function writeToFile(fileName, data) {
+function writeToFile(data) {
     const dir = `./${data.title}`;
 
     fs.mkdir(dir, {recursive: true}, (err) => {
@@ -82,6 +82,7 @@ function init() {
     inquirer.prompt(questions)
         .then(answers => {
             console.log(answers);
+            writeToFile(answers);
         });
 }
 
