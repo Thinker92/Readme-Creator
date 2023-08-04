@@ -24,13 +24,9 @@ This project is licensed under the ${license} license.`;
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
   return `# ${data.title}
-  
-${renderLicenseBadge(data.license)}
 
-## Description
-${data.description}
-
-## Table of Contents
+  ## Table of Contents
+- [Description](#description)
 - [Author](#author)
 - [Installation](#installation)
 - [Usage](#usage)
@@ -38,6 +34,10 @@ ${data.description}
 - [Contributing](#contributing)
 - [Tests](#tests)
 - [Questions](#questions)
+
+## Description
+${data.description}
+
 
 ## Author
 ${data.author}
@@ -51,8 +51,9 @@ ${data.installation}
 ## Usage
 ${data.usage}
 
-${renderLicenseLink(data.license)}
+
 ${renderLicenseSection(data.license)}
+${renderLicenseLink(data.license)} ${renderLicenseBadge(data.license)}
 
 ## Contributing
 ${data.contribution}
@@ -64,7 +65,7 @@ ${data.tests}
 \`\`\`
 
 ## Questions
-If you have any questions about the repo, open an issue or contact me directly at ${data.email}. You can find more of my work at [${data.username}](${data.githubURL}).
+If you have any questions about the repo, open an issue or contact me directly at ${data.email}. You can find more of my work at [${data.username}](https://github.com/${data.username}).
 
 
 `;

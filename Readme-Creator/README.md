@@ -1,16 +1,14 @@
 # Readme-Creator
 
   ## Table of Contents
-- [Readme-Creator](#readme-creator)
-  - [Table of Contents](#table-of-contents)
-  - [Description](#description)
-  - [Author](#author)
-  - [Installation](#installation)
-  - [Usage](#usage)
-  - [License](#license)
-  - [Contributing](#contributing)
-  - [Tests](#tests)
-  - [Questions](#questions)
+- [Description](#description)
+- [Author](#author)
+- [Installation](#installation)
+- [Usage](#usage)
+- [License](#license)
+- [Contributing](#contributing)
+- [Tests](#tests)
+- [Questions](#questions)
 
 ## Description
 This is a Node.js application that generates professional README.md files. The app will prompt users to input details about their project and some personal info,  and extrac the 
