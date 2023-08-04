@@ -1,8 +1,7 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
-// const generateMarkdown = require('./generateMarkdown');
+const generateMarkdown = require('./generateMarkdown');
 
-// TODO: Create an array of questions for user input
 const questions = [
     {
         type: "input",
@@ -66,8 +65,17 @@ const questions = [
     },
 ];
 
-// TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
+
+function writeToFile(fileName, data) {
+    const dir = `./${data.title}`;
+
+    fs.mkdir(dir, {recursive: true}, (err) => {
+        if (err) throw err; 
+
+        fs.writeFile(`${dir}/README.md`,generateMarkdown(data), (err) => err ? console.error(err) : console.log('Success! Your README.md file has been generated!'))
+    })
+    
+}
 
 
 function init() {
