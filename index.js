@@ -58,11 +58,7 @@ const questions = [
         message:
         "Enter instructions for future developers to contribute to your project:",
     },
-    {
-        type: "input",
-        name: "githubURL",
-        message: "Provide a link to the GitHub Repository:",
-    },
+    
 ];
 
 
