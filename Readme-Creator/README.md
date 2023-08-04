@@ -1,17 +1,19 @@
 # Readme-Creator
 
   ## Table of Contents
-- [Description](#description)
-- [Author](#author)
-- [Installation](#installation)
-- [Usage](#usage)
-- [License](#license)
-- [Contributing](#contributing)
-- [Tests](#tests)
-- [Questions](#questions)
+- [Readme-Creator](#readme-creator)
+  - [Table of Contents](#table-of-contents)
+  - [Description](#description)
+  - [Author](#author)
+  - [Installation](#installation)
+  - [Usage](#usage)
+  - [License](#license)
+  - [Contributing](#contributing)
+  - [Tests](#tests)
+  - [Questions](#questions)
 
 ## Description
-This is a Node.js application that generates professional README.md files. The app will prompt users to input details about their project and some personal info,  and extrac the 
+This is a Node.js application for writing 'README.md' files for all your projects! Using Inquirer, the app will prompt the user and use that data to generate a README file for your project.
 
 
 ## Author
@@ -24,19 +26,21 @@ npm install
 ```
 
 ## Usage
-Run 'node index.js' to start the application
+To start the application run the command 'node index.js'
 
 
 ## License
 
 This project is licensed under the MIT license.
 
+![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)
+
 
 [License](https://opensource.org/licenses/MIT)
- ![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)
+ 
 
 ## Contributing
-Create an issue on GitHub or contact me directly via email!
+Create an issue on GitHub or contact me directly via e-mail
 
 ## Tests
 To run tests, run the following command:
